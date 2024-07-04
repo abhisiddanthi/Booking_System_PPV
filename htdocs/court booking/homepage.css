@@ -1,0 +1,273 @@
+﻿body{
+    margin:0;
+    background-color:#C9C9C9;
+}
+.ppv{
+    font-family:Arial black;
+    color:red;
+    margin:0;
+    margin-right:0%;
+    padding:10px;
+    border-right:2.5px solid black;
+    float:left;
+    font-size:3.4vw;
+    clear:left;
+    text-align:center;
+}
+.text {
+    font-family: helvetica;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    font-size: 3.5vw;
+    vertical-align:middle;
+}
+.bottom{
+    border:2px solid black;
+    background-color:yellow;
+    font-family:Helvetica;
+    width:40%;
+    padding:10px;
+    font-size:1vw;
+    margin-top:7%;
+}
+.bottom li{
+    text-align:left;
+}
+.header1 {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    box-shadow: 4px 2px 5px #888;
+    vertical-align:middle;
+    position:sticky;
+    position:-webkit-sticky;
+    top:0;
+}
+h1{
+    display:inline-block;
+}
+li{
+    list-style-type:none;
+}
+.background{
+    height:auto;
+    width:100%;
+    vertical-align:middle;
+    margin-top:15%;
+}
+form.book input[type=number] {
+    border: 1px solid grey;
+    border-radius: 10px 0px 0px 10px;
+    height: 50px;
+    width: 40%;
+    overflow:hidden;
+    display: inline-block;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    vertical-align: middle;
+    font-size:1em;
+    text-align:center;
+}
+form.book button {
+    height: 50px;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+    background-color: grey;
+    vertical-align: middle;
+    width:90px;
+}
+html{
+    box-sizing:border-box;
+}
+*,*:after,*:before{
+    box-sizing:inherit;
+}
+.column{
+    width:33.3%;
+    height:auto;
+    float:left;
+    padding:15px;
+}
+.column2{
+    width:50%;
+    height:auto;
+    float:left;
+    padding:15px;
+}
+.container{
+    padding:0 10px;
+}
+.container:after,.row::after{
+    content:"";
+    clear:both;
+    display:table;
+}
+.column1{
+    width:50%;
+    display:none;
+    float:left;
+    height:auto;
+    padding:15px;
+}
+.images{
+    width:50%;
+    height:auto;
+    box-shadow:5px 5px 5px #888;
+    border-radius:20px;
+}
+.images2 {
+    width: 33.3%;
+    height: auto;
+    box-shadow: 5px 5px 5px #888;
+    border-radius: 20px;
+}
+.fade{
+    animation-name:fade;
+    -webkit-animation-name:fade;
+    animation-duration:3s;
+    -webkit-animation-duration:3s;
+}
+@keyframes fade{
+    from{opacity:0}
+    to{opacity:1}
+}
+@-webkit-keyframes fade{
+    from{opacity:0}
+    to{opacity:1}
+}
+.items {
+    font-family: Helvetica;
+    font-size: 2.5vw;
+    display: block;
+    color:black;
+}
+ a{
+    text-decoration:none;
+}
+@media screen and (max-width:650px){
+    .images2{
+        width:25%;
+    }
+    .column{
+        width:50%;
+    }
+    .column1{
+        display:block;
+    }
+    .column2{
+        display:none;
+        width:75%;
+        margin-left:12.5%;
+    }
+    .images{
+        width:50%;
+    }
+    .items{
+        font-size:2.75vw;
+    }
+}
+
+/*This is for page 3*/
+.column3{
+    width:25%;
+    height:auto;
+    float:left;
+    padding:15px;
+}
+.button{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1.5vw;
+    padding:20px;
+    border-radius:18px;
+    border:none;
+    background-color:#b5ffa4;
+    font-weight:bold;
+    width:75%;
+    transition:0.4s;
+    margin-bottom:0;
+}
+.panel{
+    padding:0px;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.2s ease-out;
+    margin-top:0
+}
+.apply{
+    background-color:#b5ffa4;
+    font-size:1vw;
+    font-family:helvetica;
+    font-weight:bold;
+    padding:15px;
+    border:none;
+    margin:0;
+    width:75%;
+    border-radius:0px 0px 18px 18px;
+}
+.nodisplay{
+    display:none;
+}
+@media screen and (max-width:1050px) {
+    .ppv {
+        font-size: 3.6vw;
+    }
+
+    .images {
+        width: 70%;
+    }
+
+    .images2 {
+        width: 46.62%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .ppv {
+        font-size: 3.8vw;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .ppv {
+        font-size: 4vw;
+    }
+    .column3 {
+        width: 50%;
+    }
+
+    .display {
+        display: none;
+    }
+
+    .nodisplay {
+        display: block;
+    }
+
+    .apply {
+        font-size: 2vw;
+    }
+    .bottom{
+        font-size:2vw;
+    }
+    .button {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .ppv {
+        font-size: 4.3vw;
+    }
+}
+
+@media screen and (max-width:400px) {
+    form.book {
+        font-size: 0.75em;
+    }
+}
